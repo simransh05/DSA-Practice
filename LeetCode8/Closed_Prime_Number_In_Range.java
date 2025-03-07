@@ -5,10 +5,10 @@ import java.util.List;
 
 public class Closed_Prime_Number_In_Range {
 	public static int[] closestPrimes(int left, int right) {
-		int[] nums = { -1, -1 }; // Default value if no prime pair found
+		int[] nums = { -1, -1 }; 
 		List<Integer> list = new ArrayList<>();
 
-		for (int i = left; i <= right; i++) { // Include left and right
+		for (int i = left; i <= right; i++) { 
 			if (isPrime(i)) {
 				list.add(i);
 			}
