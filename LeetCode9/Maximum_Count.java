@@ -11,17 +11,17 @@ public class Maximum_Count {
 			} else if (nums[i] < 0) {
 				countNeg += 1;
 			}
-			if (countPos > countNeg) {
-				maxCount = countPos;
-			} else {
-				maxCount = countNeg;
-			}
+		}
+		if (countPos > countNeg) {
+			maxCount = countPos;
+		} else {
+			maxCount = countNeg;
 		}
 		return maxCount;
 	}
 
 	public static void main(String[] args) {
-		int[] nums = {-2,-1,-1,1,2,3};
+		int[] nums = { -2, -1, -1, 1, 2, 3 };
 		System.out.println(maximumCount(nums));
 	}
 
